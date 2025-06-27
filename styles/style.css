@@ -65,6 +65,7 @@
 
 .post__title {
   border-bottom: solid 2px #000;
+  font-variation-settings: 'wght' 700;
   padding: 4px 10px 6px;
   font-weight: bold;
   font-size: 18px;
@@ -171,32 +172,32 @@
   transition: 0.3s ease;
 }
 
-.like-icon .core{
+.like-icon .core {
   fill: transparent;
   transition: fill 0.3s 0.03s linear;
 }
 
-.like-icon:hover .core{
+.like-icon:hover .core {
   fill: var(--contour-color);
   transition: fill 0.3s linear;
 }
 
-.like-icon .main-body{
+.like-icon .main-body {
   fill: transparent;
   transition: fill 0.3s linear;
 }
 
-.like-icon:hover .main-body{
+.like-icon:hover .main-body {
   fill: var(--contour-color);
   transition: fill 0.3s 0.05s linear;
 }
 
-.like-icon:active .core{
+.like-icon:active .core {
   fill: var(--animation-fill-color);
   transition: fill 0.3s linear;
 }
 
-.like-icon:active .main-body{
+.like-icon:active .main-body {
   fill: var(--animation-fill-color);
   transition: fill 0.3s 0.05s linear;
 }
