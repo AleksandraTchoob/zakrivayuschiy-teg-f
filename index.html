@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/mobile-icon.png" type="image/png" />
+    <link rel="icon" href="./images/apple-touch-icon.png" type="image/png" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <title>Закрывающий тег</title>
@@ -25,8 +26,8 @@
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
           <div class="marked_picture">
-            <label class="picture__watermark" aria-hidden="true"
-              >&lt;/start&gt;</label
+            <span class="picture__watermark" aria-hidden="true"
+              >&lt;/start&gt;</span
             >
             <img
               class="picture"
@@ -56,6 +57,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -81,7 +83,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -123,6 +125,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -148,7 +151,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -187,6 +190,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -212,7 +216,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -251,6 +255,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -276,7 +281,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -319,6 +324,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -344,7 +350,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -382,6 +388,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -407,7 +414,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -416,7 +423,7 @@
           <h2 class="post__title">3 спринт: Когда опускаются руки</h2>
           <div class="marked_picture">
             <label class="picture__watermark" aria-hidden="true"
-              >&lt;/just do it;&gt;</label
+              >&lt;/just do it&gt;</label
             >
             <img
               class="picture hue-rotate-filter"
@@ -448,6 +455,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -473,7 +481,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -516,6 +524,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -541,31 +550,41 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button" type="button">
+            <button class="button card__like-button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </li>
       </ul>
       <button
-        class="card__save-button"
+        class="button card__save-button"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg class="floppy-28" viewBox="0 0 28 28">
-          <use href="./svg/floppy.svg#floppy-28"></use>
+        <svg
+          class="floppy floppy__save-button"
+          fill="#FFF"
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+        >
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog id="dialog-id" class="dialog-window">
-        <svg class="floppy-39" viewBox="0 0 39 39">
-          <use href="./svg/floppy.svg#floppy-39"></use>
+        <svg
+          class="floppy floppy__dialog-window"
+          fill="#000"
+          viewBox="0 0 28 28"
+        >
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <h2 class="submit-button__text">Вставьте дискету, чтобы продолжить</h2>
         <button
-          type="submit"
-          class="submit-button"
+          type="button"
+          class="button submit-button"
           onclick="window['dialog-id'].close()"
         >
           <span class="button__text">ОК</span>
